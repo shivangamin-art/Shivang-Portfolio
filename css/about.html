@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shivang Amin • Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css">
+  <link rel="stylesheet" media="screen and (min-width: 901px)" href="css/laptop.css">
+
+</head>
+<body>
+<div id="wrapper">
+      <header id="banner">
+      <div class="brand">
+        <h1><a href="index.html">Shivang</a></h1>
+      </div>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+
+
+  <main>
+    <article>
+      <h2>About Me</h2>
+      <aside class="profile">
+        <img src="assets/me.jpg" alt="Portrait of Shivang" width="320" height="320">
+      </aside>
+      <section class="bio">
+        <p>Hi, I’m Shivang Amin — a student and a network engineer by profession. I enjoy creating solutions to complex problems, especially in the field of industrial IoT, where providing robust connectivity is key. My strength lies in researching and finding the right answers to challenges. Some of the projects I’ve contributed to include: 
+Developing a car rental system, Algoritm-Visualizer, Setting up site-to-site connectivity using OpenVPN, And enabling PLC communication with the cloud through Modbus and MQTT. I’m always excited to take on new challenges and continue growing my skills. If you’d like to collaborate or see more of my work, feel free to reach out — I’d love to connect.</p>
+        <h3>Intro Video (45–60s)</h3>
+        <video id="intro" width="560" controls poster="assets/poster.jpg">
+          <source src="assets/intro.mp4" type="video/mp4">
+          Your browser doesn’t support HTML5 video.
+        </video>
+        <br>
+        <button class="button" onclick="playPause()">Play / Pause</button>
+        <script>
+          var vid=document.getElementById('intro');
+          function playPause(){vid.paused?vid.play():vid.pause();}
+        </script>
+      </section>
+      <div class="clear"></div>
+    </article>
+  </main>
+
+    <footer id="site-footer">
+  <small>© 2025 Shivang Amin • <a href="mailto:shivang.amin@ontariotecu.net">shivang.amin@ontariotecu.net</a></small>
+</footer>
+
+</div>
+</body>
+</html>
