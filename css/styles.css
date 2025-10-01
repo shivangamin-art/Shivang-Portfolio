@@ -75,3 +75,9 @@ h1, h2, h3 {
   color: var(--brand1);
   margin-top: 0;
 }
+
+.card {
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* keep text color same */
+  cursor: pointer;       /* show hand on hover */
+}
