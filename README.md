@@ -1,0 +1,2 @@
+Shivang-Portfolio
+This repository contains the source code for my personal portfolio website. It features a responsive layout, smooth navigation, and sections for showcasing projects, skills, and contact information. Designed to reflect my style as a developer and to make it easy for visitors to explore my work.
