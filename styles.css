@@ -4,3 +4,74 @@
   --muted:#b7bfd6;
   --brand1:#7c5cff;
   --brand2:#ff6aa9;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;color:var(--ink);background:var(--bg);font-family:Verdana, Geneva, Arial, sans-serif;line-height:1.6}
+#wrapper{max-width:1000px;margin:0 auto;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));padding:0 12px 24px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.18)}
+#banner{
+  background:
+    radial-gradient(1200px 300px at 10% -50%, var(--brand1) 0%, transparent 60%),
+    radial-gradient(900px 300px at 90% -40%, var(--brand2) 0%, transparent 65%);
+  padding:18px 12px;border-radius:0 0 12px 12px
+}
+#banner .brand{float:left}
+#banner h1{margin:0;font-size:28px;letter-spacing:0.5px}
+#banner .dot{color:var(--brand2)}
+#banner .tag{margin:2px 0 0 0;color:var(--muted);font-size:12px}
+#banner nav{float:right}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:inline-block;margin-left:8px}
+.menu a{display:inline-block;padding:8px 12px;border:1px solid rgba(255,255,255,0.18);border-radius:999px;text-decoration:none;color:var(--ink)}
+.menu a:hover,.menu a:focus{background:rgba(255,255,255,0.08);outline:0}
+.hero{padding:24px 12px;margin-top:12px;background:linear-gradient(135deg, rgba(124,92,255,0.25), rgba(255,106,169,0.15));border:1px solid rgba(255,255,255,0.08);border-radius:12px}
+.button {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--brand1), var(--brand2));
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124,92,255,0.10);
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+.features{margin-top:16px}
+.feature-box{width:100%;display:inline-block;vertical-align:top;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px;margin-top:10px}
+.feature-box:hover {
+  background: rgba(124,92,255,0.08);
+  border-color: var(--brand1);
+  transition: background 0.3s, border-color 0.3s;
+}
+.profile{float:left;width:35%;max-width:360px}
+.profile img{width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,0.12)}
+.bio{float:right;width:60%}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  transition: transform .35s, box-shadow .35s, background 0.3s;
+}
+.card:hover, .card:focus-within {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  background: rgba(124,92,255,0.05);
+}
+.form fieldset{border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:12px}
+.form label{display:block;margin-top:10px}
+.form input,.form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:#0c1634;color:var(--ink)}
+.form input:focus,.form textarea:focus{outline:2px solid var(--brand1);}
+#site-footer{margin-top:28px;text-align:center;color:var(--muted);padding:18px;border-top:1px solid rgba(255,255,255,0.12)}
+.clear{clear:both}
+h1, h2, h3 {
+  font-family: 'Segoe UI', Verdana, Geneva, Arial, sans-serif;
+  letter-spacing: 1px;
+  color: var(--brand1);
+  margin-top: 0;
+}

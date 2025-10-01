@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shivang Amin • Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css">
+  <link rel="stylesheet" media="screen and (min-width: 901px)" href="css/laptop.css">
+
+</head>
+<body>
+<div id="wrapper">
+      <header id="banner">
+      <div class="brand">
+        <h1><a href="index.html">Shivang Amin<span class="dot">.</span></a></h1>
+      </div>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+
+
+  <main>
+      <h2>Contact</h2>
+      <p>Use the form to reach me.</p>
+
+      <form id="contact" class="form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com">
+
+          <label for="phone">Cell No.</label>
+          <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="\d{10,15}" required placeholder="+1 123456789">
+
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="5" maxlength="1000" required></textarea>
+
+          <button type="submit" class="button">Submit</button>
+        </fieldset>
+      </form>
+  </main>
+
+    <footer id="site-footer">
+  <small>© 2025 Shivang Amin • <a href="mailto:shivang.amin@ontariotecu.net">shivang.amin@ontariotecu.net</a></small>
+</footer>
+
+</div>
+</body>
+</html>
