@@ -5,7 +5,6 @@
   --brand1: #6366F1;      /* Indigo-violet (rich primary accent) */
   --brand2: #EC4899;      /* Pink-magenta (vivid secondary accent) */
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0F172A;        /* Deep navy-gray background */
@@ -16,12 +15,9 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   color: var(--ink);
@@ -33,63 +29,47 @@ body {
 #wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.03),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
   padding: 0 12px 24px;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
-/* ---------- Banner ---------- */
+/* Banner */
 #banner {
-  background: radial-gradient(
-      1200px 300px at 10% -50%,
-      var(--brand1) 0%,
-      transparent 60%
-    ),
+  background:
+    radial-gradient(1200px 300px at 10% -50%, var(--brand1) 0%, transparent 60%),
     radial-gradient(900px 300px at 90% -40%, var(--brand2) 0%, transparent 65%);
   padding: 18px 12px;
   border-radius: 0 0 12px 12px;
 }
-
-#banner .brand {
-  float: left;
-}
-
+#banner .brand { float: left; }
 #banner h1 {
   margin: 0;
   font-size: 28px;
   letter-spacing: 0.5px;
 }
-
-#banner .dot {
-  color: var(--brand2);
-}
-
+#banner .dot { color: var(--brand2); }
 #banner .tag {
   margin: 2px 0 0 0;
   color: var(--muted);
   font-size: 12px;
 }
+#banner nav { float: right; }
 
-#banner nav {
-  float: right;
+/* Prevent brand link turning red after click */
+.brand a:link,
+.brand a:visited {
+  color: var(--ink);
+  text-decoration: none;
 }
+.brand a:hover,
+.brand a:focus { text-decoration: underline; }
+.brand a:active { color: var(--brand2); }
 
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  display: inline-block;
-  margin-left: 8px;
-}
-
+/* Menu */
+.menu { list-style: none; margin: 0; padding: 0; }
+.menu li { display: inline-block; margin-left: 8px; }
 .menu a {
   display: inline-block;
   padding: 8px 12px;
@@ -98,31 +78,22 @@ body {
   text-decoration: none;
   color: var(--ink);
 }
-
 .menu a:hover,
 .menu a:focus {
   background: rgba(255, 255, 255, 0.08);
   outline: 0;
 }
 
-.brand a:visited {
-  color: var(--ink);
-  text-decoration: none;
-}
-
-/* ---------- Hero ---------- */
+/* Hero */
 .hero {
   padding: 24px 12px;
   margin-top: 12px;
-  background: linear-gradient(
-    135deg,
-    rgba(124, 92, 255, 0.25),
-    rgba(255, 106, 169, 0.15)
-  );
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.25), rgba(255, 106, 169, 0.15));
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
 }
 
+/* Button */
 .button {
   display: inline-block;
   background: linear-gradient(90deg, var(--brand1), var(--brand2));
@@ -130,7 +101,7 @@ body {
   text-decoration: none;
   padding: 10px 18px;
   border-radius: 999px;
-  border: none;
+  border: 0;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(124, 92, 255, 0.1);
@@ -139,55 +110,42 @@ body {
 
 .features {
   margin-top: 20px;
-  text-align: center;
+  text-align: center;       /* centers the section heading only */
 }
 
 .features h2 {
   margin-bottom: 20px;
 }
 
-.long-box {
-  width: 100%;
-  padding: 20px;
+/* Each box is just a block that fills the wrapper’s width */
+.feature-box {
+  display: inline-block;      /* Allow boxes to sit side by side */
+  vertical-align: top;        /* Align tops of boxes */
+  /* Remove width and margin-right here, let laptop.css handle it */
+  padding: 16px;
   background: rgba(99, 102, 241, 0.10);
   border: 4px solid var(--brand1);
   border-radius: 12px;
+  box-sizing: border-box;
   box-shadow: 0 2px 12px rgba(99, 102, 241, 0.10);
-  text-align: left;          /* Align inner text to left */
-  line-height: 1.6;
+  margin-bottom: 20px;        /* Space between rows */
 }
 
-.long-box h3 {
-  margin-top: 0;
-  color: var(--brand1);
-  margin-bottom: 8px;
-}
+/* ====================================================================== */
 
-.long-box p {
-  margin-bottom: 18px;
-}
-
-
-/* ---------- Profile / Bio ---------- */
 .profile {
   float: left;
   width: 35%;
   max-width: 360px;
 }
-
 .profile img {
   width: 100%;
   height: auto;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
+.bio { float: right; width: 60%; }
 
-.bio {
-  float: right;
-  width: 60%;
-}
-
-/* ---------- Cards ---------- */
 .card {
   display: inline-block;
   vertical-align: top;
@@ -198,8 +156,10 @@ body {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.02);
   transition: transform 0.35s, box-shadow 0.35s, background 0.3s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
-
 .card:hover,
 .card:focus-within {
   transform: translateY(-4px) scale(1.02);
@@ -207,24 +167,12 @@ body {
   background: rgba(124, 92, 255, 0.05);
 }
 
-.card {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-/* ---------- Forms ---------- */
 .form fieldset {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 12px;
 }
-
-.form label {
-  display: block;
-  margin-top: 10px;
-}
-
+.form label { display: block; margin-top: 10px; }
 .form input,
 .form textarea {
   width: 100%;
@@ -234,13 +182,9 @@ body {
   background: #0c1634;
   color: var(--ink);
 }
-
 .form input:focus,
-.form textarea:focus {
-  outline: 2px solid var(--brand1);
-}
+.form textarea:focus { outline: 2px solid var(--brand1); }
 
-/* ---------- Footer ---------- */
 #site-footer {
   margin-top: 28px;
   text-align: center;
@@ -249,14 +193,9 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* ---------- Utilities ---------- */
-.clear {
-  clear: both;
-}
+.clear { clear: both; }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Segoe UI", Verdana, Geneva, Arial, sans-serif;
   letter-spacing: 1px;
   color: var(--brand1);
