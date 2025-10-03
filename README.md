@@ -1,72 +1,93 @@
-# Personal Portfolio Website  
 
-## Overview  
-This project is my personal portfolio website created for INFR3120 – Web & Scripting Programming, Assignment 1.  
-The repository contains the source code for my personal portfolio website. It features a responsive layout, smooth navigation, and sections for showcasing projects, skills, and contact information. Designed to reflect my style as a developer and to make it easy for visitors to explore my work.
+## Overview
+This project is my personal portfolio website created for the course INFR3120 – Web and Scripting Programming.
+The website is built using HTML5 and CSS3, and it is hosted live using GitHub Pages.  
 
-Live Site: https://github.com/shivangamin-art/Shivang-Portfolio
-Repository: https://shivangamin-art.github.io/Shivang-Portfolio/
+It contains 4 different pages:
+- Home Page: Includes navigation to all sections.  
+- About Me Page: Contains a photo, a short introduction, and an embedded video (45–60 seconds).  
+- Projects Page: Lists and explains 4–5 projects I worked on.  
+- Contact Page: Features a contact form with validation (Name, Email, Phone, Comments).  
 
-## Site Structure  
-The website contains 4 pages:  
-1. Home Page – Introduction with navigation links.  
-2. About Me Page – My photo, short bio, and a 45–60s embedded video with controls and poster image.  
-3. Projects Page – Showcases 4–5 projects with titles and short descriptions.  
-4. Contact Me Page – Includes a form with input validation (Name, Email, Cell No., Comments).  
+---
 
-A footer is present on all pages containing my email and copyright.  
-Semantic HTML tags such as `<header>`, `<footer>`, `<nav>`, and `<article>` are used appropriately.  
+## Deployment
+- Live Site: https://github.com/shivangamin-art/Shivang-Portfolio
+- Repository: https://shivangamin-art.github.io/Shivang-Portfolio/
 
-## GUI & Interface  
+---
 
-- Responsiveness:  
-  The site uses fluid design with media queries. Separate CSS files are included for each viewport:  
-  - `mobile.css` → up to 600px (phones)  
-  - `tablet.css` → 601px – 900px (tablets)  
-  - `laptop.css` → 901px and above (laptops/desktops)  
-  These breakpoints were chosen based on standard device screen widths.  
-
-- Gradients:  
-  A linear gradient and angled gradient are applied in the Projects page background to create visual depth.  
-
-- Color Scheme:  
-  The color palette was generated using [Adobe Color](https://color.adobe.com/create).  
-  - Background: `#0b1020`  
-  - Text: `#e7e9ee`  
-  - Muted text: `#b7bfd6`  
-  - Accent colors: `#7c5cff` (brand1), `#ff6aa9` (brand2)  
-  I chose this scheme for a modern, professional look with strong contrast and readability.  
-
-
-
-## Testing & Validation  
-
-- HTML Validation: Checked via [W3C Markup Validator](http://validator.w3.org/). No major errors.  
-- CSS Validation: Tested using [W3C CSS Validator](http://jigsaw.w3.org/css-validator/). Passed successfully.  
-- Link Checker: Verified using [W3C Link Checker](http://validator.w3.org/checklink). All links are functional.  
-- Spell Check: Site content was proofread with an online spell checker.  
-- Accessibility: Evaluated using [WAVE Accessibility Tool](http://wave.webaim.org/). Adjustments made for alt text, labels, and contrast.  
+## File Structure
+Portfolio-Website
+│
+├── index.html # Home Page
+├── about.html # About Me Page
+├── projects.html # Projects Page
+├── contact.html # Contact Me Page
+│
+├── css/
+│ ├── base.css # Common styles for all pages
+│ ├── mobile.css # Styles for mobile devices (max-width: 600px)
+│ ├── tablet.css # Styles for tablets (601px – 900px)
+│ └── laptop.css # Styles for laptops/desktops (min-width: 901px)
+│
+├── images/ # Contains profile photo, project images, icons
+│
+├── videos/ # Contains the About Me intro video
+│
+└── README.md # Project documentation
 
 
+## Viewport Sizes (Responsiveness)
+I used a fluid design with media queries and created separate CSS files for each viewport:
+- Mobile: `max-width: 600px` → Optimized for small screens.  
+- Tablet: `min-width: 601px and max-width: 900px` → Adjusts layout for tablets.  
+- Laptop/Desktop: `min-width: 901px` → Full layout for larger displays.  
 
-## Version Control  
+These breakpoints were chosen because they are common device widths and ensure a smooth responsive experience.
 
-- Repository is public and well-structured.  
-- Includes commits that show the project’s progress at different stages.  
-- The site is deployed via GitHub Pages.  
+---
 
+## Gradients
+I applied linear and angle linear gradients on the site:  
+- Home Page background: uses a vertical linear gradient for a modern look.  
+- Contact form section: uses an angled linear gradient to highlight the form area.  
 
+---
 
-## External Code & Citations  
-This project is primarily my own work. External code used is within the 10% limit and properly cited:  
+## Color Scheme
+I used a custom color palette generated with [Adobe Color](https://color.adobe.com/create):  
+- Primary: `#7c5cff` (brand purple)  
+- Accent: `#ff6aa9` (brand pink)  
+- Background: `#0b1020` (dark)  
+- Text (ink): `#e7e9ee` (light gray)  
+- Muted text: `#b7bfd6`  
 
-- Example: Navigation styling inspiration from [W3Schools Nav Tutorial](https://www.w3schools.com/css/css_navbar.asp).  
-- Example: Form validation reference adapted from [MDN Web Docs](https://developer.mozilla.org/).  
+This scheme provides strong contrast, modern aesthetics, and good readability.
 
-Each borrowed snippet is commented in the code explaining its purpose.  
+---
 
+## Testing and Validation
+- HTML Validation: Passed W3C Markup Validator (no errors).  
+- CSS Validation: Passed W3C CSS Validator (no errors).  
+- Link Checker: All links verified with W3C Link Checker (working).  
+- Spell Check: Checked with [Grammarly / browser spell check], no errors.  
+- Accessibility: Tested with [WAVE](http://wave.webaim.org/), passed with no major issues.  
 
+---
 
-## Author  
+## Version Control
+- Repository is structured with separate folders for HTML, CSS, images and video.  
+- Site is deployed live on GitHub Pages.  
+
+---
+
+## Citations
+- Some guidance and explanations were provided by ChatGPT (OpenAI).  
+- All other code was written by me, with help from ChatGPT(OpenAI) for troubleshooting and resolving issues.
+
+---
+
+## Author
 Shivang Amin  
-Student & Network Engineer
+Student & Network Engineer  
