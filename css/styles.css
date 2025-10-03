@@ -152,9 +152,9 @@ html, body {
   width: 100%;
   padding: 14px;
   margin-top: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(127, 23, 230, 0.08);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(49, 9, 230, 0.02);
   transition: transform 0.35s, box-shadow 0.35s, background 0.3s;
   text-decoration: none;
   color: inherit;
@@ -200,4 +200,5 @@ h1, h2, h3 {
   letter-spacing: 1px;
   color: var(--brand1);
   margin-top: 0;
+  
 }
