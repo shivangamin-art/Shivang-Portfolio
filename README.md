@@ -29,8 +29,23 @@ Shivang-Portfolio/
 ├── projects.html
 ├── contact.html
 ├── README.md
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── README.md
 │
 ├── css/
+│   ├── styles.css
+│   ├── mobile.css
+│   ├── tablet.css
+│   └── laptop.css
+│
+└── assets/
+    ├── intro.mp4
+    ├── me.jpg
+    └── poster.jpg
+```
 │   ├── styles.css
 │   ├── mobile.css
 │   ├── tablet.css
