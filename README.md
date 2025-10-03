@@ -20,7 +20,7 @@ It contains 4 different pages:
 ---
 
 ## File Structure
-
+```
 Portfolio-Website
 │
 ├── index.html # Home Page
@@ -39,7 +39,7 @@ Portfolio-Website
 ├── videos/ # Contains the About Me intro video
 │
 └── README.md # Project documentation
-
+```
 ---
 
 ## Viewport Sizes (Responsiveness)
