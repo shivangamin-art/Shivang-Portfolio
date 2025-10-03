@@ -21,25 +21,26 @@ It contains 4 different pages:
 
 ## File Structure
 
-Portfolio-Website
+```
+Shivang-Portfolio/
 │
-├── index.html # Home Page
-├── about.html # About Me Page
-├── projects.html # Projects Page
-├── contact.html # Contact Me Page
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── README.md
 │
 ├── css/
-│ ├── base.css # Common styles for all pages
-│ ├── mobile.css # Styles for mobile devices (max-width: 600px)
-│ ├── tablet.css # Styles for tablets (601px – 900px)
-│ └── laptop.css # Styles for laptops/desktops (min-width: 901px)
+│   ├── styles.css
+│   ├── mobile.css
+│   ├── tablet.css
+│   └── laptop.css
 │
-├── images/ # Contains profile photo, project images, icons
-│
-├── videos/ # Contains the About Me intro video
-│
-└── README.md # Project documentation
-
+└── assets/
+    ├── intro.mp4
+    ├── me.jpg
+    └── poster.jpg
+```
 ---
 
 ## Viewport Sizes (Responsiveness)
