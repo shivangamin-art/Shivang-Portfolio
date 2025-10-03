@@ -1,5 +1,5 @@
 #banner h1{font-size:34px}
-.feature-box{width:32%; margin-right:2%}
+.feature-box{width:45%; margin-right:2%}
 .feature-box:nth-child(3n){margin-right:0}
 .card{width:48%}
 .card:nth-child(odd){margin-right:2%}

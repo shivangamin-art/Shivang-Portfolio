@@ -4,8 +4,8 @@
 This project is my personal portfolio website created for INFR3120 – Web & Scripting Programming, Assignment 1.  
 The repository contains the source code for my personal portfolio website. It features a responsive layout, smooth navigation, and sections for showcasing projects, skills, and contact information. Designed to reflect my style as a developer and to make it easy for visitors to explore my work.
 
-Live Site: [Your GitHub Pages Link Here]  
-Repository: [Your GitHub Repo Link Here]  
+Live Site: https://github.com/shivangamin-art/Shivang-Portfolio
+Repository: https://shivangamin-art.github.io/Shivang-Portfolio/
 
 ## Site Structure  
 The website contains 4 pages:  
