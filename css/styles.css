@@ -137,31 +137,36 @@ body {
   transition: opacity 0.2s, box-shadow 0.2s;
 }
 
-/* ---------- Features (Top-to-Bottom Stacked Boxes) ---------- */
 .features {
   margin-top: 20px;
-  text-align: center;         /* center heading */
+  text-align: center;
 }
 
 .features h2 {
   margin-bottom: 20px;
 }
 
-.feature-box {
-  display: grid;             /* stack naturally */
-  width: 100%;                /* take full available width */
-  margin: 0 0 20px 0;         /* space between boxes */
-  padding: 26px;
-  box-sizing: border-box;
+.long-box {
+  width: 100%;
+  padding: 20px;
   background: rgba(99, 102, 241, 0.10);
   border: 4px solid var(--brand1);
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(99, 102, 241, 0.10);
+  text-align: left;          /* Align inner text to left */
+  line-height: 1.6;
 }
 
-.feature-box h3 {
+.long-box h3 {
   margin-top: 0;
+  color: var(--brand1);
+  margin-bottom: 8px;
 }
+
+.long-box p {
+  margin-bottom: 18px;
+}
+
 
 /* ---------- Profile / Bio ---------- */
 .profile {
