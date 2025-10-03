@@ -37,6 +37,7 @@ Portfolio-Website
 │
 └── README.md # Project documentation
 
+---
 
 ## Viewport Sizes (Responsiveness)
 I used a fluid design with media queries and created separate CSS files for each viewport:
